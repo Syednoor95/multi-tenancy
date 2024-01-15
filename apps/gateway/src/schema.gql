@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserGqlDto {
+  id: ID
+  alias: String
+  email: String
+  mobile: String
+  firstName: String
+  lastName: String
+  isActive: Boolean
+}
+
+type Query {
+  hello: String!
+  getAllUsers: [UserGqlDto!]!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): UserGqlDto!
+}
+
+input CreateUserInput {
+  firstName: String
+  lastName: String
+  email: String!
+  mobile: String
+  isActive: Boolean
+}
