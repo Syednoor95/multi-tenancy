@@ -20,7 +20,7 @@ Docker installed
 
 ```bash
 git clone https://github.com/Syednoor95/multi-tenancy.git
-cd multi-tenant-graphql-api
+cd multi-tenancy
 ```
 
 2. Install dependencies:
@@ -32,7 +32,7 @@ npm install
 
 ```bash
 # Start docker
-$ docker compose up -d
+$ docker-compose up --build
 ```
 
 4. watch mode
